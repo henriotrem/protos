@@ -1,2 +1,2 @@
 build:
-	protoc --go_out=plugins=grpc:. tracking-pixel/**/*.proto
+	protoc --go_out=plugins=grpc:. tracker/**/*.proto
