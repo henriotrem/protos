@@ -1,6 +1,7 @@
 syntax = "proto3";
 
 package rocket;
+option go_package = "./rocket/v1/;pb";
 
 // Rocket represents the model of our rocket
 message Rocket {
