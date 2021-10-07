@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package tracking-pixel;
+
+message Tracking {
+  required int32 people_id = 0;
+  required int32 source_id = 1;
+  optional int32 url_id= 2;
+} 
