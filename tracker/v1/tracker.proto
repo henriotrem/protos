@@ -1,7 +1,7 @@
 syntax = "proto3";
 
-package tracking_pixel;
-option go_package = "./tracking-pixel/v1/;pb";
+package tracker;
+option go_package = "./tracker/v1/;pb";
 
 message Tracking {
   int32 people_id = 1;
