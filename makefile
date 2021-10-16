@@ -1,2 +1,2 @@
 build:
-	protoc --go_out=plugins=grpc:. tracker/**/*.proto
+	protoc -I. --go_out=:. **/**/*.proto 
