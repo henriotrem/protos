@@ -1,7 +1,6 @@
 syntax = "proto3";
 
-package card;
-option go_package = "./card/v1/;pb";
+option go_package = "./card/v1/;card";
 
 message Card {
     string id = 1;
