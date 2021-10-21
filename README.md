@@ -1,1 +1,1 @@
-# Protobuf Monorepository
+# Monorepo for gRPC microservices
