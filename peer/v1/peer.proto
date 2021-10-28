@@ -1,0 +1,34 @@
+syntax = "proto3";
+
+option go_package = "./peer/v1/;peer";
+
+message Index {
+    string hash = 1;
+    int32 score = 2;
+}
+
+message Item {
+    string hash = 1;
+    string id = 2;
+}
+
+service PeerService {
+    rpc Get (GetRequest) returns (GetResponse);
+    rpc Add (AddRequest) returns (AddResponse);
+}
+
+message GetRequest {
+    repeated string hash = 1;
+}
+
+message GetResponse {
+    repeated Index indexes = 1;
+    repeated Item items = 2;
+}
+
+message AddRequest {
+    Item item = 1;
+}
+
+message AddResponse {
+}
